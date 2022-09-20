@@ -30,14 +30,13 @@ Deve essere possibile effettuare la ricerca dei prestiti
 dato nome e cognome di un utente.
  */
 
-public class Autore
-{
-    public string Name  { get; set; }
-    public string LastName { get; set; }
 
-    public Autore(string name, string lastName)
-    {
-        this.Name = name;
-        this.LastName = lastName;
-    }
+
+
+public class Libreria
+{
+    public string name { get; set; }
+    public List<Libro> Libri { get; set; }
+    public List<Dvd> Dvds { get; set; }
+
 }
