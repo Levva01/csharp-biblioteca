@@ -36,9 +36,11 @@ dato nome e cognome di un utente.
 public class Libro : Documento
 {
     public int isbn { get; set; }
+    public int nPagine { get; set; }
 
-    public Libro(string titolo, bool stato, int isbn) : base(titolo, stato)
+    public Libro(string titolo, bool stato, int isbn, int nPagine) : base(titolo, stato)
     {
         this.isbn = isbn;
+        this.nPagine = nPagine;
     }
 }

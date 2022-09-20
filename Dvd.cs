@@ -33,10 +33,11 @@ dato nome e cognome di un utente.
 public class Dvd : Documento
 {
     public int Serial { get; set; }
+    public int Durata { get; set; }
 
-    public Dvd(string titolo, bool stato, int serial) : base(titolo, stato)
+    public Dvd(string titolo, bool stato, int serial, int durata) : base(titolo, stato)
     {
         this.Serial = serial;
+        this.Durata = durata;
     }
-
 }

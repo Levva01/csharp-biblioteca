@@ -38,4 +38,11 @@ public class Utente
     public string Password { get; set; }
     public string Telefono { get; set; }
     
+    public Utente(string name, string email, string password, string telefono)
+    {
+        this.Nome = name;
+        this.Email = email;
+        this.Password = password;
+        this.Telefono = telefono;
+    }
 }
